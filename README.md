@@ -27,3 +27,8 @@
   - install google
     - sudo vi /etc/yum.repos.d/google.repo
     - sudo yum -y install google-chrome-stable
+
+## ssh server install
+  - sudo yum install openssh openssh-server
+  - sudo vi /etc/ssh/sshd_config
+  
