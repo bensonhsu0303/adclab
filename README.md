@@ -77,8 +77,20 @@
     - sudo cp ~/Downloads/syno-ca-cert.pem syno-ca-cert.pem
   - sudo vi `/etc/openldap/ldap.conf`
 
+## nsswitch.conf
+  - sudo vim `/etc/nsswitch.conf`
+
+## auth config
+  - sudo authconfig --enableforcelegacy --update
+  - authconfig --enableldap --enableldapauth --ldapserver="140.113.147.69" --ldapbasedn="dc=adclab,dc=nctu,dc=edu,dc=tw" --update
+  - authconfig --enableldaptls --update
+
 ## nslcd config
-  - sudo vi `/etc/nslcd.conf`
+  - sudo vim `/etc/nslcd.conf`
+  - sudo service nslcd start
+  - sudo systemctl enable nslcd
+  
+  
   
 
   
