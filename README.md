@@ -76,6 +76,9 @@
     - sudo cp ~/Downloads/cert.pem cert.pem
     - sudo cp ~/Downloads/syno-ca-cert.pem syno-ca-cert.pem
   - sudo vi `/etc/openldap/ldap.conf`
+
+## nslcd config
+  - sudo vi `/etc/nslcd.conf`
   
 
   
