@@ -54,4 +54,26 @@
 ## Autofs
   - sudo yum install autofs*
   - sudo yum install nfs-utils nfs-utils-lib
+  - sudo vim /etc/auto.syno
+  - sudo vim /etc/auto.master
+  - sudo service autofs restart
+  - sudo chkconfig autofs on
+  - cd /net/lab/ : `success`
+
+## Ldap client
+  - [reference](https://sites.google.com/a/cnsrl.cycu.edu.tw/da-shu-bi-ji/qi-ta/liyongsynologynasdangzuoldapnfsserverjianzhibuzhou?fbclid=IwAR3yzTCq-af3e2Hk-3K2pDD0zPnYfakVjHW6uikx318Ky5npqYdSSyl8yFc)
+  - sudo yum install {openldap,openldap-clients,nss-pam-ldapd}
+  - setup / Authentication configuration
+    - authentication setup
+      - 緩衝區資訊
+      - 使用 LDAP
+      - 使用 LDAP 認證
+      - 使用 TLS
+      - ldap://140.113.xxx.xxx
+      - dc=xxx,dc=xxx,dc=xxx,dc=xxx
+      - 匯出憑證
+        - cd /etc/openldap/cacerts/
+        - sudo cp ~/Downloads/cert.pem cert.pem
+        - sudo cp ~/Downloads/syno-ca-cert.pem syno-ca-cert.pem
+
   
