@@ -14,6 +14,7 @@
     - driver installation [step](https://www.amd.com/en/support/kb/release-notes/amdgpu-installation?fbclid=IwAR2NtjI4khr9AIba_e88YGInfTBS70fNDmssxubDpgJCPkv5b_uwpXrrnoY)
     - 要載 [`amdgpu-pro-preinstall.sh`](https://www2.ati.com/drivers/linux/17.50/amdgpu-pro-preinstall.sh)
     - 裝到 `./amdgpu-install -y` 這個步驟就好
+    - reboot
   - setting the network interface
     - ip: `140.113.xxx.xxx`
     - netmask: `255.255.255.0`
