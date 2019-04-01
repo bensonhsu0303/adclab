@@ -32,10 +32,11 @@
   - turn off SELinux
     - sudo vi `/etc/selinux/config`
     - SELINUX=disabled
+    - sudo reboot
   - copy welcome script
     - sudo mkdir -p `/usr/lib/lab-script`
-    - vi `/usr/lib/lab-script/mkmotd`
-    - vi `/usr/lib/lab-script/labShell`
+    - sudo vi `/usr/lib/lab-script/mkmotd`
+    - sudo vi `/usr/lib/lab-script/labShell`
     - sudo chown adc `/usr/lib/lab-script/mkmotd`
     - sudo chgrp adc `/usr/lib/lab-script/mkmotd`
     - sudo chmod 755 `/usr/lib/lab-script/mkmotd`
