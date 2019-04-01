@@ -71,9 +71,11 @@
       - 使用 TLS
       - ldap://140.113.xxx.xxx
       - dc=xxx,dc=xxx,dc=xxx,dc=xxx
-      - 匯出憑證
-        - cd /etc/openldap/cacerts/
-        - sudo cp ~/Downloads/cert.pem cert.pem
-        - sudo cp ~/Downloads/syno-ca-cert.pem syno-ca-cert.pem
+  - 匯出憑證
+    - cd /etc/openldap/cacerts/
+    - sudo cp ~/Downloads/cert.pem cert.pem
+    - sudo cp ~/Downloads/syno-ca-cert.pem syno-ca-cert.pem
+  - sudo vi `/etc/openldap/ldap.conf`
+  
 
   
