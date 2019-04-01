@@ -1,0 +1,19 @@
+#!/bin/bash -eu
+
+hostname="adc "
+cpu=$(grep -m1 'model name' /proc/cpuinfo | sed 's/.*:\s*//' | tr -s ' ')
+mem=$(($(awk '/MemTotal/ { print $2 }' /proc/meminfo) / 1024))
+tmp=$(df -h /tmp | tail -n +2 | awk '{ print $3 "/" $2 }')
+welcome='Welcome to ADC-Lab Linux Serivce!'
+clear=$(echo -ne '\033[m')
+
+openfor='Open for all students and faculty'
+color=$(echo -ne '\033[1;32m')
+echo $(uname -rsov)
+figlet "$hostname" | sed \
+    -e "s/.*/$color&$clear/g" \
+    -e "1s/$/  CPU: $cpu/" \
+    -e "2s%$%  MEM: $mem MiB  /tmp: $tmp%" \
+    -e "4s/$/  $welcome/" \
+    -e "5s/$/  $openfor/" >&2
+
