@@ -51,3 +51,7 @@
     - sudo vi `/etc/ssh/sshd_config`
     - sudo service sshd restart
   
+## Autofs
+  - sudo yum install autofs*
+  - sudo yum install nfs-utils nfs-utils-lib
+  
