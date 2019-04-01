@@ -9,7 +9,7 @@
   - create `sudo user`, and assign administration permission.
   
 ## preparation step:
-  - install the graphic driver
+  - install the graphic driver for graphic card `WX 2100`
     - Download from [here](https://www.amd.com/en/support/kb/release-notes/rn-rad-lin-18-50-unified?fbclid=IwAR08JQ2wFH7q1R56RMYwth0GXeb2yf5A1GzaFg8YXy4k36Vr2UppQkeJAPc)
     - driver installation [step](https://www.amd.com/en/support/kb/release-notes/amdgpu-installation?fbclid=IwAR2NtjI4khr9AIba_e88YGInfTBS70fNDmssxubDpgJCPkv5b_uwpXrrnoY)
     - 要載 [`amdgpu-pro-preinstall.sh`](https://www2.ati.com/drivers/linux/17.50/amdgpu-pro-preinstall.sh)
