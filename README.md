@@ -91,7 +91,7 @@
   - sudo service nslcd start
   - sudo systemctl enable nslcd
   
-## `csh.cshrc`
+## csh.cshrc
   - sudo vim `/etc/csh.cshrc`
   
 ## default shell
