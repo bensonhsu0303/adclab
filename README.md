@@ -78,6 +78,7 @@
   - sudo vi `/etc/openldap/ldap.conf`
 
 ## auth config
+  - [reference](https://www.certdepot.net/ldap-client-configuration-authconfig/)
   - sudo authconfig --enableforcelegacy --update
   - authconfig --enableldap --enableldapauth --ldapserver="140.113.147.69" --ldapbasedn="dc=adclab,dc=nctu,dc=edu,dc=tw" --update
   - authconfig --enableldaptls --update
