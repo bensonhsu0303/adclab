@@ -43,6 +43,9 @@
     - sudo chown adc `/usr/lib/lab-script/labShell`
     - sudo chgrp adc `/usr/lib/lab-script/labShell`
     - sudo chmod 755 `/usr/lib/lab-script/labShell`
+  - install figlet
+    - sudo yum install epel-release
+    - sudo yum install figlet
   - install ssh server
     - sudo yum install openssh openssh-server
     - sudo vi `/etc/ssh/sshd_config`
