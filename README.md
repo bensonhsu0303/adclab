@@ -18,8 +18,11 @@
     - ip: `140.113.xxx.xxx`
     - netmask: `255.255.255.0`
     - dns: `140.113.6.2`
-  - change chinese directory to english directory
-  
+  - change `chinese directory` to `english directory`
+    - export LANG=en_US
+    - xdg-user-dirs-gtk-update : `update new name`
+    - export LANG=zh_CN.UTF-8
+    - xdg-user-dirs-gtk-update : `keep old name`
   - install google
     - sudo vi /etc/yum.repos.d/google.repo
     - sudo yum -y install google-chrome-stable
