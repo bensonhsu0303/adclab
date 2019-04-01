@@ -21,3 +21,5 @@
   - change chinese directory to english directory
   
   - install google
+    - sudo vi /etc/yum.repos.d/google.repo
+    - sudo yum -y install google-chrome-stable
