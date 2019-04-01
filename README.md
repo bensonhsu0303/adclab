@@ -30,19 +30,20 @@
 
 ## ssh server install
   - turn off SELinux
-    - xxx
+    - sudo vi `/etc/selinux/config`
+    - SELINUX=disabled
   - copy welcome script
-    - sudo mkdir -p /usr/lib/lab-script
-    - vi /usr/lib/lab-script/mkmotd
-    - vi /usr/lib/lab-script/labShell
-    - sudo chown adc /usr/lib/lab-script/mkmotd
-    - sudo chgrp adc /usr/lib/lab-script/mkmotd
-    - sudo chmod 755 /usr/lib/lab-script/mkmotd
-    - sudo chown adc /usr/lib/lab-script/labShell
-    - sudo chgrp adc /usr/lib/lab-script/labShell
-    - sudo chmod 755 /usr/lib/lab-script/labShell
+    - sudo mkdir -p `/usr/lib/lab-script`
+    - vi `/usr/lib/lab-script/mkmotd`
+    - vi `/usr/lib/lab-script/labShell`
+    - sudo chown adc `/usr/lib/lab-script/mkmotd`
+    - sudo chgrp adc `/usr/lib/lab-script/mkmotd`
+    - sudo chmod 755 `/usr/lib/lab-script/mkmotd`
+    - sudo chown adc `/usr/lib/lab-script/labShell`
+    - sudo chgrp adc `/usr/lib/lab-script/labShell`
+    - sudo chmod 755 `/usr/lib/lab-script/labShell`
   - install ssh server
     - sudo yum install openssh openssh-server
-    - sudo vi /etc/ssh/sshd_config
+    - sudo vi `/etc/ssh/sshd_config`
     - sudo service sshd restart
   
