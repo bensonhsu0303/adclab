@@ -3,7 +3,8 @@
 hostname="adc "
 cpu=$(grep -m1 'model name' /proc/cpuinfo | sed 's/.*:\s*//' | tr -s ' ')
 mem=$(($(awk '/MemTotal/ { print $2 }' /proc/meminfo) / 1024))
-tmp=$(df -h /tmp | tail -n +2 | awk '{ print $3 "/" $2 }')
+root=$(df -h / | tail -n +2 | awk '{ print $3 "/" $2 }')
+home=$(df -h /home | tail -n +2 | awk '{ print $3 "/" $2 }')
 welcome='Welcome to ADC-Lab Linux Serivce!'
 clear=$(echo -ne '\033[m')
 
@@ -13,7 +14,7 @@ echo $(uname -rsov)
 figlet "$hostname" | sed \
     -e "s/.*/$color&$clear/g" \
     -e "1s/$/  CPU: $cpu/" \
-    -e "2s%$%  MEM: $mem MiB  /tmp: $tmp%" \
+    -e "2s%$%  MEM: $mem MiB  /: $root  /home: $home%" \
     -e "4s/$/  $welcome/" \
     -e "5s/$/  $openfor/" >&2
 
