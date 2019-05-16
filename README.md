@@ -99,3 +99,9 @@
   
 ## some useful link  
   - increase root directory partition: [link](https://channing342.blogspot.com/2017/07/centos7-xfs-filesystem-lvm.html?m=1&fbclid=IwAR0Jf19nzEqjdWZy0jx_Cbnf5PEAafGKddeaD58Iy_AWMoaspxBO_Q6rOl4)
+
+##  Troubleshooting 
+  - Failed to lock log file: /home/john/CDS.log.9
+    - sudo yum install sssd-client.i686 nss-pam-ldapd.i686
+  - wv libmng.so.1 shared object not found
+    - sudo yum install libmng.x86_64
