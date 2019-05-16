@@ -96,3 +96,6 @@
   
 ## default shell
   - chsh : `/bin/tcsh`
+  
+## some useful link  
+  - increase root directory partition: [link](https://channing342.blogspot.com/2017/07/centos7-xfs-filesystem-lvm.html?m=1&fbclid=IwAR0Jf19nzEqjdWZy0jx_Cbnf5PEAafGKddeaD58Iy_AWMoaspxBO_Q6rOl4)
