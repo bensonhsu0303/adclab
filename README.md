@@ -105,3 +105,8 @@
     - sudo yum install sssd-client.i686 nss-pam-ldapd.i686
   - wv libmng.so.1 shared object not found
     - sudo yum install libmng.x86_64
+##  nas
+  - sudo vim /etc/auto.syno   test: # cd /net/lab
+  -Ldap client
+  -auth config
+  -sudo service nslcd restart
