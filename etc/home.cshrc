@@ -49,3 +49,4 @@ set prompt="%B%{\033[36m%}%T %{\033[33m%}%n%{\033[37m%}@%m%{\033[32m%}[%~]%{\033
 endif
 set autolist
 
+alias shutadc /usr/lib/lab-script/shutDownShell
