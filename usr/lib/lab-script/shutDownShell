@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+#
+# This file is edited by vim
+#
+
+if [ $# -eq 1 ]; then
+	goalsecs=`date -d "$1" +%s`
+	nowsecs=`date +%s`
+	secs=`expr $goalsecs - $nowsecs`	
+	mins=`expr $secs / 60`
+	sudo shutdown --no-wall -t 100 -h +$mins	
+else
+	printf "usage: $0 \""	
+	date +"%Y/%m/%d %H:%M:%S" | awk '{printf "%s\"",$0} END {print ""}'
+fi
