@@ -10,3 +10,7 @@ setenv PATH {$PATH}:/usr/sbin:/opt/sublime_text:/usr/local/MATLAB/R2018b/bin
 setenv META_QUEUE 1
 setenv W3264_NO_HOST_CHECK 1
 
+# Analog FastSpice
+setenv AFS_ROOT /var/tmp/amsv/amsv
+setenv PATH {$PATH}:$AFS_ROOT/bin
+setenv MGLS_LICENSE_FILE 1717@lscic
