@@ -51,7 +51,7 @@
     - sudo vi `/etc/ssh/sshd_config`
     - sudo service sshd restart
   
-## Autofs
+## Autofs(*nas*)
   - sudo yum install autofs*
   - sudo yum install nfs-utils nfs-utils-lib
   - sudo vim /etc/auto.syno
@@ -60,7 +60,7 @@
   - sudo chkconfig autofs on
   - cd /net/lab/ : `success`
 
-## Ldap client
+## Ldap client(*nas*)
   - [reference](https://sites.google.com/a/cnsrl.cycu.edu.tw/da-shu-bi-ji/qi-ta/liyongsynologynasdangzuoldapnfsserverjianzhibuzhou?fbclid=IwAR3yzTCq-af3e2Hk-3K2pDD0zPnYfakVjHW6uikx318Ky5npqYdSSyl8yFc)
   - sudo yum install {openldap,openldap-clients,nss-pam-ldapd}
   - setup / Authentication configuration
@@ -77,16 +77,16 @@
     - sudo cp ~/Downloads/syno-ca-cert.pem syno-ca-cert.pem
   - sudo vi `/etc/openldap/ldap.conf`
 
-## auth config
+## auth config(*nas*)
   - [reference](https://www.certdepot.net/ldap-client-configuration-authconfig/)
   - sudo authconfig --enableforcelegacy --update
   - authconfig --enableldap --enableldapauth --ldapserver="140.113.147.69" --ldapbasedn="dc=adclab,dc=nctu,dc=edu,dc=tw" --update
   - authconfig --enableldaptls --update
   
-## nsswitch.conf
+## nsswitch.conf(*nas*)
   - sudo vim `/etc/nsswitch.conf`
 
-## nslcd config
+## nslcd config(*nas*)
   - sudo vim `/etc/nslcd.conf`
   - sudo service nslcd start
   - sudo systemctl enable nslcd
@@ -105,7 +105,7 @@
     - sudo yum install sssd-client.i686 nss-pam-ldapd.i686
   - wv libmng.so.1 shared object not found
     - sudo yum install libmng.x86_64
-##  nas
+##  nas(*nas*)
   - sudo vim /etc/auto.syno   test: # cd /net/lab
   - Ldap client
   - auth config
