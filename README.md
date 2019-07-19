@@ -93,6 +93,8 @@
   
 ## csh.cshrc
   - sudo vim `/etc/csh.cshrc`
+  - sudo vim `/etc/home.cshrc`
+  - sudo vim `/etc/tool.cshrc`
   
 ## default shell
   - chsh : `/bin/tcsh`
