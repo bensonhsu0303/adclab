@@ -14,3 +14,6 @@ setenv W3264_NO_HOST_CHECK 1
 setenv AFS_ROOT /var/tmp/amsv/amsv
 setenv PATH {$PATH}:$AFS_ROOT/bin
 setenv MGLS_LICENSE_FILE 1717@lscic
+
+# auCore.cxt patch
+setenv CDS_AUTO_64BIT NONE
