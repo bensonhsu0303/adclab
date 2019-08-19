@@ -1,0 +1,11 @@
+[Unit]
+Description=UPS controller, log to /etc/ups-parse/ups-parse.log
+After=local-fs.target network.target
+
+[Service]
+ExecStart=/etc/ups-parse/ups-parse
+Type=forking
+
+[Install]
+WantedBy=multi-user.target
+
