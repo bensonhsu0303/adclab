@@ -107,6 +107,9 @@
     - sudo yum install sssd-client.i686 nss-pam-ldapd.i686
   - wv libmng.so.1 shared object not found
     - sudo yum install libmng.x86_64
+  - virtuoso command not found
+    - sudo yum install ksh
+    - sudo yum install libGLU
 ##  nas(*nas*)
   - sudo vim /etc/auto.syno   test: # cd /net/lab
   - Ldap client
