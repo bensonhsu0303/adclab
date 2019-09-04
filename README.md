@@ -115,3 +115,8 @@
   - Ldap client
   - auth config
   - sudo service nslcd restart
+##  CIC software
+  - download to path : /usr/cad/cadence/
+  - mmsim
+    - sudo yum install elfutils-libelf-0.172-2.el7.i686
+    - comment out 35、36
