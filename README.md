@@ -119,4 +119,6 @@
   - download to path : /usr/cad/cadence/
   - mmsim
     - sudo yum install elfutils-libelf-0.172-2.el7.i686
-    - comment out 35、36
+    - /usr/cad/cadence/CIC/mmsim.cshrc  comment out 35、36
+  - sudo vim /etc/tool.cshrc
+    - source /usr/cad/cadence/CIC/<soft>.cshrc
