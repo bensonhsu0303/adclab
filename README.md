@@ -122,3 +122,11 @@
     - /usr/cad/cadence/CIC/mmsim.cshrc  comment out 35、36
   - sudo vim /etc/tool.cshrc
     - source /usr/cad/cadence/CIC/<soft>.cshrc
+##  nas user
+  - Directory Server
+    - add user
+  - 控制台
+    - 更新LDAP資料
+  - File Station
+    - homes/lab
+      - add folder 內容>擁有者>套用到資料夾
