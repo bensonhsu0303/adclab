@@ -126,7 +126,7 @@
   - Directory Server
     - 管理使用者 > add user
   - 控制台
-    - 更新LDAP資料
+    - 使用者帳號 > 更新LDAP資料
   - File Station
     - homes/lab
       - add folder 內容 > 擁有者 > 套用到資料夾
